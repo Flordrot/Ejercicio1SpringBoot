@@ -6,9 +6,10 @@
         <title th:text="${title}"></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/styles.css" rel="stylesheet">
     <nav th:replace="fragmentos :: navbar"></nav>
 </head>
-<body style="background-color: lightgray">
+<body style="background-color: lavender">
     <div>
         <h1 style="color:purple" align="center" th:text="${title}"></h1>
     </div>
@@ -17,11 +18,12 @@
             <label for="fid"></label> 
             <input type="hidden" id="fid" name="fid" th:field="*{id}"><br> 
             <br>
-            <label style="background-color: lightgray">
+            <label style="background-color: lavender">
                 <h4 style="color: purple" for="fname">Nombre de la Editorial:</label></h4> 
             <input type="text" id="fname" name="fname" th:field="*{nombre}">
             <br>
             <form class="container-fluid justify-content-start">
+                <br>
                 <button style="color: purple" class="btn btn-outline-success me-5" th:text="${action == 'guardar'} ? 'Crear Editorial' : 'Guardar Editorial'"
                         type="submit"</button>
                 <br>

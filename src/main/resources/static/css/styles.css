@@ -1,4 +1,31 @@
+html{
+    background-color: lavender;
+  background-image: url("Libross.jpg");
+}
+
 h1{
 font-family: 'Roboto Mono', monospace;
-color:red;
+background-color: lavender;
+color: purple;
+align:"center";
+}
+
+a{
+font-family: 'Roboto Mono', monospace;
+color:purple;
+}
+
+#alpha {
+  background-color: rgba(0, 0, 0, .0);
+  height: 2em;
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  color: #fff;
+  text-align: center;
+  padding-top: 1em;
+}
+
+navbar {
+background-color: lavender;
 }
